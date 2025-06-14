@@ -51,11 +51,15 @@
   <section id="contato" class="contato">
     <div class="container">
       <h2>Entre em Contato</h2>
-      <form>
-        <input type="text" placeholder="Seu nome" required />
-        <input type="email" placeholder="Seu e-mail" required />
-        <textarea placeholder="Digite sua mensagem..." required></textarea>
+      <form action="https://formsubmit.co/emanuelrecuero41@gmail.com" method="POST">
+        <input type="text" name="nome" placeholder="Seu nome" required />
+        <input type="email" name="email" placeholder="Seu e-mail" required />
+        <textarea name="mensagem" placeholder="Digite sua mensagem..." required></textarea>
         <button type="submit">Enviar</button>
+
+        <!-- Evita spam e define a página de retorno após o envio -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://recuero-06.github.io/Aterrissagem-Adv/">
       </form>
     </div>
   </section>
